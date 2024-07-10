@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 20px; /* Margen de 20px en todos los lados de la página */
+      padding: 10px; /* Padding de 10px en todos los lados de la página */
+      font-family: Arial, sans-serif; /* Ejemplo de definición de fuente */
+    }
+    #cuadros{
+      display: flex;
+      justify-content: space-between; /* Distribuye los elementos uniformemente */
+      margin: 50px 50px;
+    }
+    #imagen4{
+      margin: 50px 50px;
+      float: left;
+    }
+    .carousel-inner {
+      display: flex;
+      justify-content: center; /* Centrar horizontalmente */
+      align-items: center; /* Centrar verticalmente */
+    }
+  </style>
+</head>
+<body>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/img1.webp" class="d-block w-50" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/img2.jpg" class="d-block w-50" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/img3.webp" class="d-block w-50" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Pagina de Videojuegos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Proximos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tipos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.1001juegos.com/categoria/deportes">Deporte</a></li>
+              <li><a class="dropdown-item" href="https://www.1001juegos.com/e/de-terror">Terror</a></li>
+              <li><a class="dropdown-item" href="https://www.1001juegos.com/categoria/accion">Accion</a></li>
+              <li><a class="dropdown-item" href="https://www.1001juegos.com/categoria/puzzle">Puzzles</a></li>
+
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://juegos.elpais.com/todos-los-juegos">Favoritos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Encontrar</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <h1 class="display-1">Todo lo que un Juego puede ofrecer </h1>
+  <h6>Los juegos multijugador en línea más complejos ayudan a enseñar a los jugadores cómo ser estratégicos y analíticos para evaluar el riesgo y la recompensa. Estos juegos requieren que los jugadores jóvenes reaccionen rápidamente a los cambios en el juego. Este tipo de juego beneficia a los niños porque las habilidades pueden transferirse a trabajos del mundo real que se basan en la resolución de problemas, habilidades analíticas y pensamiento estratégico.
+
+  Ofrecer una nueva forma de entender la cultura y las perspectivas.
+  Dado que los juegos permiten a los niños sumergirse en mundos virtuales y, en ocasiones, conectarse con personas de todo el mundo, puede ser una excelente manera de aprender sobre diferentes perspectivas y culturas.</h6><br>
+  
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+  <div id="cuadros">
+    <div class="card" style="width: 25rem;">
+      <img src="imagenes/imagen5.png" height="400px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Minecraft</h5>
+        <p class="card-text"> Es un juego de construcción y exploración en un mundo abierto donde los jugadores pueden recolectar recursos y construir estructuras.</p>
+        <a href="https://www.minecraft.net/es-es" class="btn btn-primary">Entra/Conoce</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 25rem;">
+      <img src="imagenes/imagen6.webp" height="400px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">GTA San Andreas</h5>
+        <p class="card-text">Es un juego de acción y aventura ambientado en una versión ficticia de California, donde los jugadores asumen el rol de un personaje que participa en misiones y actividades delictivas.</p>
+        <a href="https://www.rockstargames.com/es" class="btn btn-primary">Entra/Conoce</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 25rem;">
+      <img src="imagenes/imagen7.jpg" height="400px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mario Bros</h5>
+        <p class="card-text"> Es un juego de plataformas donde los jugadores controlan a Mario o Luigi para saltar sobre obstáculos, derrotar enemigos y rescatar a la Princesa Peach del villano Bowser.</p>
+        <a href="https://mario.nintendo.com/es/" class="btn btn-primary">Entra/Conoce</a>
+      </div>
+    </div>
+  </div>
+  <div id="imagen4">
+  <img src="imagenes/img3.jpg" class="img-fluid" alt="...">
+  </div>
+  <h1 class="display-4">Desde sus inicios</h1>
+  <h6>El mundo de los videojuegos comienza ya hacia los años 70 con las máquinas de Arcade y la empresa Atari. La empresa Atari vendió miles de copias de la máquina del primer videojuego comercial conocido como Pong y luego de este, los lanzamientos de Space Invaders y Pac-Man.
+
+    En el año 1996, los videojuegos dan un salto en las consolas gracias a Nintendo 64, llamado así por que fue el primero en incorporar en su arquitectura un procesador principal de 64 bits, en su competencia con las empresas desarrolladoras de videojuegos, Sega con Saturn y Sony con su PlayStation 1.
+    
+    En torno a 1979 se incorpora la versión informática del juego de rol de mesa y que sería el primer videojuego multiusuario conocido como Calabozos y Dragones (Dungeons & Dragons, nombre en inglés) y luego de este se desarrolla el primer juego multiusuario con imágenes en 1986, conocido como Habitat.
+    
+    La revolución de los juegos en línea comienza a partir de 1993 con la creación de la Worl Wide Web, la red de informática mundial, también referida ambiguamente como “Internet”, en la que los usuarios tenían acceso a distintas versiones de videojuegos, entre las cuales las más populares eran los tipos de juego de rol multijugador masivo en línea o también conocido como MMORPG (Massively multiplayer online role-playing game, por sus siglas en inglés). Entre los cuales se encontraban juegos tales como Doom, Nexus: The Kingdom of the Winds, Starcraft, Lineage y el juego más popular desde su lanzamiento en el 2004, World of Warcraft, al celebrar el décimo aniversario de su franquicia Warcraft.</h6><br>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+  <img src="imagenes/imagen8.jpg" class="img-fluid" alt="...">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
